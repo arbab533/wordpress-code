@@ -1,0 +1,23 @@
+<p><a id="loadMore" href="#">Load More</a></p>
+
+.item {
+	display: none !Important;
+}
+
+.vc_visible-item-visible-important {
+	display: inline-block !important;
+}
+
+setTimeout(() => {
+jQuery(".item").slice(0, 6).addClass("vc_visible-item-visible-important");
+}, 3000)
+if(jQuery('.item')) {
+
+  jQuery("#loadMore").on("click", function(e){
+    e.preventDefault();
+    jQuery(".item:hidden").slice(0, 3).addClass("vc_visible-item-visible-important");
+    if(jQuery(".item:hidden").length == 0) {
+      jQuery("#loadMore").text("No Content").addClass("noContent");
+    }
+  });
+}
