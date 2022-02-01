@@ -1,0 +1,53 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"  />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"  />
+    
+<style>
+        
+.services_container.custom_serv.owl-loaded.owl-drag {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.owl-stage-outer {
+    /* max-width:  200px !important; */
+    overflow: hidden;
+}
+
+.owl-item.active {
+    display: inline-block;
+}
+        
+</style>
+    
+    
+    
+<script>
+
+	jQuery(document).ready(function ($) {
+		// 	if( typeof jQuery('.ult-carousel-251295698761698a2241565').slick == "function"){
+		$('.custom_serv').owlCarousel({
+			loop:true,
+			margin:10,
+			responsiveClass:true,
+			responsive:{
+				0:{
+					items:1,
+					nav:true
+				},
+				600:{
+					items:2,
+					nav:false
+				},
+				1000:{
+					items:3,
+					nav:true,
+					loop:false
+				}
+			}
+		})
+	});
+  
+</script>
+	
