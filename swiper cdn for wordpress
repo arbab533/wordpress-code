@@ -1,0 +1,25 @@
+wp_enqueue_style('swiper_cdn_css', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.5/swiper-bundle.css');
+wp_enqueue_style('swiper_cdn_css_mini', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.5/swiper-bundle.min.css');
+wp_enqueue_script('swiper_cdn_js', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.5/swiper-bundle.min.js');
+
+const swiper = new Swiper('.swiper', {
+	slidesPerView: 4,
+	spaceBetween: 10,
+  speed: 400,
+  spaceBetween: 100,
+
+  autoplay: {
+	   delay: 5000,
+	 },
+
+
+	  pagination: {
+	    el: '.swiper-pagination',
+	    type: 'bullets',
+	  },
+
+	  navigation: {
+	    nextEl: '.swiper-button-next',
+	    prevEl: '.swiper-button-prev',
+	  },
+});
